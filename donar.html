@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El Comedor - Donar</title>
+    </head>
+    <body>
+        <header>
+            <div id="titulo">
+                <h2>El Comedor</h2>
+            </div>
+            <div id="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="index.html">Productos</a></li>
+                        <li><a href="#">Entregas</a></li>
+                        <li><a href="donar.html">Donar</a></li>
+                        <li><button>Cerrar Sesion</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="usuario">
+                <li><a href="#">👤</a></li>
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <h1>Donación</h1>
+            </div>
+            <div id="upload-container">
+                <img src="imgs/añadir_img.png" alt="añadir imagen" id="añadirIMG">
+                    <div id="upload-text">
+                        Cargar foto desde la biblioteca<button id="upload-photo">Subir foto</button>
+                    </div> 
+                
+            </div>
+            <div>
+                <form action="">
+                    <label for="id">ID</label>
+                    <input type="text" name="id" id="id">
+                </form>
+                <form action="">
+                    <label for="tipo">Tipo</label>
+                    <select name="tipo" id="tipo">
+                        <option value="">Selecciona una opción</option>
+                        <option value="enl">Enlatado</option>
+                        <option value="ace">Aceite</option>
+                        <option value="leg">Legumbres</option>
+                    </select>                
+                </form>
+                <form action="">
+                    <label for="descr">Descripcion</label>
+                    <input type="text" name="descr" id="descr">
+                </form>
+                <form action="">
+                    <label for="cant">Cantidad</label>
+                    <input type="number" name="cant" id="cant">
+                </form>
+            </div>
+            <div>
+                <button>Cancelar</button>
+                <button>Donar</button>
+            </div>
+        </main>
+    </body>
+</html>
