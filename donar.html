@@ -4,66 +4,72 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>El Comedor - Donar</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+        <header id="header">
             <div id="titulo">
                 <h2>El Comedor</h2>
             </div>
             <div id="navbar">
                 <nav>
-                    <ul>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="index.html">Productos</a></li>
-                        <li><a href="#">Entregas</a></li>
-                        <li><a href="donar.html">Donar</a></li>
-                        <li><button>Cerrar Sesion</button></li>
+                    <ul id="nav_ul">
+                        <li><a class="nav-link" href="#">Dashboard</a></li>
+                        <li><a class="nav-link" href="index.html">Productos</a></li>
+                        <li><a class="nav-link" href="#">Entregas</a></li>
+                        <li><a class="nav-link" href="donar.html">Donar</a></li>
+                        <li><button class="boton-signout" href="#">Cerrar Sesion</button></li>
                     </ul>
                 </nav>
             </div>
             <div id="usuario">
-                <li><a href="#">👤</a></li>
+                <a href="#"><img src= "usuario.png" alt="usuario"></a>
             </div>
         </header>
 
-        <main>
-            <div>
+        <main id="main">
+            <div id="titulo_pagina">
                 <h1>Donación</h1>
             </div>
-            <div id="upload-container">
-                <img src="imgs/añadir_img.png" alt="añadir imagen" id="añadirIMG">
-                    <div id="upload-text">
-                        Cargar foto desde la biblioteca<button id="upload-photo">Subir foto</button>
-                    </div> 
-                
-            </div>
-            <div>
-                <form action="">
-                    <label for="id">ID</label>
-                    <input type="text" name="id" id="id">
-                </form>
-                <form action="">
-                    <label for="tipo">Tipo</label>
-                    <select name="tipo" id="tipo">
-                        <option value="">Selecciona una opción</option>
-                        <option value="enl">Enlatado</option>
-                        <option value="ace">Aceite</option>
-                        <option value="leg">Legumbres</option>
-                    </select>                
-                </form>
-                <form action="">
-                    <label for="descr">Descripcion</label>
-                    <input type="text" name="descr" id="descr">
-                </form>
-                <form action="">
-                    <label for="cant">Cantidad</label>
-                    <input type="number" name="cant" id="cant">
-                </form>
-            </div>
-            <div>
-                <button>Cancelar</button>
-                <button>Donar</button>
-            </div>
+                <div id="contenedor">
+                <div id="upload-container">
+                    <img src="añadir_img.png" alt="añadir imagen" id="anadirIMG">
+                        <div id="upload-text">
+                            Cargar foto desde la biblioteca<input type="file" id="upload-photo" accept="image/*">
+                            <label for="upload-photo" class="seleccionar">Seleccionar</label>
+                        </div> 
+                </div>
+                <div id="info">
+                    <form action="" class="formulario">
+                        <label for="id"><p>ID</p></label>
+                        <input type="text" name="id" id="id" class="entrada">
+                    </form>
+                    <form action="" class="formulario">
+                        <label for="tipo"><p>Tipo</p></label>
+                        <select name="tipo" id="tipo" class="entrada">
+                            <option value="">Selecciona una opción</option>
+                            <option value="enl">Enlatado</option>
+                            <option value="ace">Aceite</option>
+                            <option value="leg">Legumbres</option>
+                        </select>                
+                    </form>
+                    <form action="" class="formulario">
+                        <label for="descr"><p>Descripción</p></label>
+                        <input type="text" name="descr" id="descr" class="entrada">
+                    </form>
+                    <form action="" class="formulario">
+                        <label for="cant"><p>Cantidad</p></label>
+                        <input type="number" name="cant" id="cant" class="entrada">
+                    </form>
+                </div>
+                </div>
+                <div id="botones">
+                    <a class="boton-cancelar" href="index.html">CANCELAR</a>
+                    <button class="boton-donar">DONAR</button>
+                </div>
         </main>
     </body>
 </html>

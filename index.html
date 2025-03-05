@@ -4,40 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>El Comedor - Productos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+        <header id="header">
             <div id="titulo">
                 <h2>El Comedor</h2>
             </div>
             <div id="navbar">
                 <nav>
-                    <ul>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="index.html">Productos</a></li>
-                        <li><a href="#">Entregas</a></li>
-                        <li><a href="donar.html">Donar</a></li>
-                        <li><button>Cerrar Sesion</button></li>
+                    <ul id="nav_ul">
+                        <li><a class="nav-link" href="#">Dashboard</a></li>
+                        <li><a class="nav-link" href="index.html">Productos</a></li>
+                        <li><a class="nav-link" href="#">Entregas</a></li>
+                        <li><a class="nav-link" href="donar.html">Donar</a></li>
+                        <li><button class="boton-signout" href="#">Cerrar Sesion</button></li>
                     </ul>
                 </nav>
             </div>
             <div id="usuario">
-                <li><a href="#">👤</a></li>
+                <a href="#"><img src= "usuario.png" alt="usuario"></a>
             </div>
         </header>
 
         <main>
-            <div>
+            <div id="titulo_pagina">
                 <h1>Productos</h1>
             </div>
-            <div>
-                <table border="1">
+            <div id="tabla">
+                <table>
                     <thead>
                         <tr>
                             <th><strong>ID</strong></th>
                             <th><strong>TIPO</strong></th>
-                            <th><strong>DESCRIPCION</strong></th>
+                            <th><strong>DESCRIPCIÓN</strong></th>
                             <th><strong>INVENTARIO</strong></th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -45,37 +50,37 @@
                             <td><strong>AD133</strong></td>
                             <td>Enlatado</td>
                             <td>Atún Dolores - 133g</td>
-                            <td><button>-</button> 4 <button>+</button></td>
+                            <td><a class="control" href="#">--</a> 4 <a class="control" href="#">+</a></td>
                             <td>
-                                <button>✏️</button>
-                                <button>🗑️</button>
+                                <a class="icono" href="#"><img src="editar.png" alt="editar"></a>
+                                <a class="icono" href="#"><img src="eliminar.png" alt="eliminar"></a>
                             </td>
                         </tr>
                         <tr>
                             <td><strong>AC750</strong></td>
                             <td>Aceite</td>
                             <td>Aceite Capullo - 750ml</td>
-                            <td><button>-</button> 23 <button>+</button></td>
+                            <td><a class="control" href="#">--</a> 23 <a class="control" href="#">+</a></td>
                             <td>
-                                <button>✏️</button>
-                                <button>🗑️</button>
+                                <a class="icono" href="#"><img src="editar.png" alt="editar"></a>
+                                <a class="icono" href="#"><img src="eliminar.png" alt="eliminar"></a>
                             </td>
                         </tr>
                         <tr>
                             <td><strong>LV500</strong></td>
                             <td>Legumbres</td>
                             <td>Lentejas Verde Valle - 500g</td>
-                            <td><button>-</button> 12 <button>+</button></td>
+                            <td><a class="control" href="#">--</a> 12 <a class="control" href="#">+</a></td>
                             <td>
-                                <button>✏️</button>
-                                <button>🗑️</button>
+                                <a class="icono" href="#"><img src="editar.png" alt="editar"></a>
+                                <a class="icono" href="#"><img src="eliminar.png" alt="eliminar"></a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div>
-                <button>DONAR PRODUCTO</button>
+            <div id="botones">
+                <a class="boton-donar" href="donar.html">DONAR PRODUCTO</a>
             </div>
         </main>
     </body>

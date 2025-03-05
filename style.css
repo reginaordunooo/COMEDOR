@@ -1,0 +1,400 @@
+html{
+    font-family: Jost, sans-serif;
+}
+
+#header {
+    background-color: #6FA4D3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+#titulo {
+    float: left;
+    margin-left: 60px;
+}
+
+#navbar {
+    width: 40%;
+    margin-left: 300px;
+}
+
+
+#nav_ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.nav-link.active{
+    background-color: white;
+    color: #6FA4D3;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 2px 5px;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.boton-signout {
+    font-family: Jost, sans-serif;
+    background-color: #6FA4D3;
+    font-size: 16px ;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 3px 5px;
+    text-align: center;
+    
+    display: inline-block;
+    cursor: pointer;
+}
+
+#usuario{
+    margin-right: 40px;
+}
+
+.icono img{
+    width: 30px;
+    height: auto;
+}
+
+.control{
+    text-decoration: none;
+    font-size: 20px ;
+    color: #6FA4D3;
+    font-weight: 600;
+}
+
+.boton-signout:hover {
+    background-color: white;
+    font-size: 16px ;
+    color: #6FA4D3;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 3px 5px;
+}
+
+#usuario img {
+    width : 40px;
+    height: auto;
+}
+
+#titulo_pagina{
+    margin-left: 120px 
+}
+
+table{
+    width: 80%;
+    margin-left: 120px;
+    border-collapse: collapse;
+    border-top: 1.5px solid #DEE2E6;
+}
+
+th,td {
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1.5px solid #DEE2E6;
+    text-align: center;
+  }
+
+#botones{
+    width: 23%;
+    margin: 50px;
+    margin-right:200px;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.boton-cancelar{
+    font-family: Jost, sans-serif;
+    background-color: rgb(239, 239, 239);
+    font-size: 16px ;
+    color: #6FA4D3;
+    border: 1px solid #6FA4D3;
+    border-radius: 3px;
+    padding: 3px 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton-cancelar:hover {
+    background-color: white;
+    font-size: 16px ;
+    color: #6FA4D3;
+    border: 1px solid #6FA4D3;
+    border-radius: 3px;
+    padding: 3px 40px;
+}
+
+.boton-donar{
+    font-family: Jost, sans-serif;
+    background-color: white;
+    font-size: 16px ;
+    color: #6FA4D3;
+    border: 1px solid #6FA4D3;
+    border-radius: 3px;
+    padding: 3px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.boton-donar:hover {
+    background-color: #6FA4D3;
+    font-size: 16px ;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 3px 40px;
+}
+
+#upload-container {
+    size: 100px;
+    margin-right: 160px;
+    width: 23%;
+    align-items: center;
+}
+
+#anadirIMG {
+    width: 100%;
+    height: auto;
+}
+
+#upload-text {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.seleccionar{
+    cursor: pointer;
+    text-align: center;
+    background-color: #c8ced4;
+    border: 1px solid #5b5d5f;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info{
+    font-size: 20px;
+    margin-right: 300px;
+    
+}
+
+input[type=file]{
+    display: none;
+}
+
+.formulario{
+    margin-bottom:30px;
+}
+
+.entrada{
+    padding: 10px 20px;
+}
+
+
+@media (min-width: 1024px) {
+    #header {
+        flex-direction: column;
+        align-items: space-around;
+        padding: 10px;
+    }
+
+    #titulo {
+        margin-left: 20px;
+    }
+
+    #navbar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #nav_ul {
+        flex-direction: row;
+        align-items: space-around;
+        padding-left: 20px;
+    }
+
+    #botones {
+        width: 50%;
+        margin: 20px;
+        justify-content: space-around;
+        float: right;
+    }
+
+    table {
+        width: 95%;
+        margin-left: 20px;
+    }
+
+    #upload-container {
+        width: 90%;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    #info {
+        font-size: 18px;
+        margin-right: 0;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    #titulo {
+        margin-left: 15px;
+    }
+
+    #navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    #nav_ul {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 45px;
+    }
+
+    #usuario{
+        margin-left:50px;
+    }
+
+    #botones {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px;
+        float: right;
+    }
+
+    table {
+        width: 100%;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    #contenedor{
+        flex-direction: column;
+    }
+
+    #upload-container {
+        width: 90%;
+        margin: 20px;
+        text-align: left;
+    }
+
+    #añadirIMG {
+        width: 20%;
+        height: auto;
+    }
+
+    #info {
+        font-size: 18px;
+        margin: 0;
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: space-around;
+        padding: 10px;
+    }
+
+    #titulo {
+        margin-left: 15px;
+    }
+
+    #navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    #nav_ul {
+        flex-direction: row;
+        align-items: space-around;
+        padding-left: 15px;
+    }
+    
+    #usuario{
+        align-items: center;
+        margin-left: 50px
+    }
+    #botones {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0px;
+        float: right;
+    }
+
+    table {
+        width: 100%;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    #upload-container {
+        width: 80%;
+        margin: 20px;
+        text-align: left;
+    }
+
+    #upload-text {
+        display: inline-block;
+    }
+
+    #añadirIMG {
+        width: 100%;
+        height: auto;
+    }
+
+    #info {
+        font-size: 18px;
+        margin-left: 10px;
+        text-align: left;
+    }
+}
