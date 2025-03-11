@@ -1,6 +1,17 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header, #main {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #header{
     color: white;
-    background-color: #6FA4D3;
+    background-color: #6FA4D3; 
 }
 
 #titulo {
@@ -55,4 +66,14 @@
 
 #tabla{
     font-family: Jost, sans-serif;
+}
+
+.seleccionar{
+    font-family: Jost, sans-serif;
+    background-color: #c8ced4;
+    border: 1px solid #5b5d5f;
+}
+
+input[type=file]{
+    display: none;
 }
