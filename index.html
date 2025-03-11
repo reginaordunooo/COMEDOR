@@ -35,56 +35,60 @@
             </header>
 
             <main>
-                <div id="titulo_pagina">
-                    <h1>Productos</h1>
-                </div>
-                <div id="tabla">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th><strong>ID</strong></th>
-                                <th><strong>TIPO</strong></th>
-                                <th><strong>DESCRIPCIÓN</strong></th>
-                                <th><strong>INVENTARIO</strong></th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>AD133</strong></td>
-                                <td>Enlatado</td>
-                                <td>Atún Dolores - 133g</td>
-                                <td><a class="control" href="#">--</a> 4 <a class="control" href="#">+</a></td>
-                                <td>
-                                    <a class="icono" href="#"><img src="editar.png" alt="editar"></a>
-                                    <a class="icono" href="#"><img src="eliminar.png" alt="eliminar"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>AC750</strong></td>
-                                <td>Aceite</td>
-                                <td>Aceite Capullo - 750ml</td>
-                                <td><a class="control" href="#">--</a> 23 <a class="control" href="#">+</a></td>
-                                <td>
-                                    <a class="icono" href="#"><img src="editar.png" alt="editar"></a>
-                                    <a class="icono" href="#"><img src="eliminar.png" alt="eliminar"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>LV500</strong></td>
-                                <td>Legumbres</td>
-                                <td>Lentejas Verde Valle - 500g</td>
-                                <td><a class="control" href="#">--</a> 12 <a class="control" href="#">+</a></td>
-                                <td>
-                                    <a class="icono" href="#"><img src="editar.png" alt="editar"></a>
-                                    <a class="icono" href="#"><img src="eliminar.png" alt="eliminar"></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="botones">
-                    <a class="boton-donar" href="donar.html">DONAR PRODUCTO</a>
+                <div class="container-fluid mt-4 ms-5 ps-5 font-Jost">
+                    <row class="justify-content-center">
+                        <div id="titulo_pagina" class="col-3 ms-5 mb-3 ps-3">
+                            <h1>Productos</h1>
+                        </div>
+                    </row>
+                    <div class="table-responsive-lg col-10 ms-4">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><strong>ID</strong></th>
+                                    <th scope="col"><strong>TIPO</strong></th>
+                                    <th scope="col"><strong>DESCRIPCIÓN</strong></th>
+                                    <th scope="col"><strong>INVENTARIO</strong></th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><strong>AD133</strong></th>
+                                    <td>Enlatado</td>
+                                    <td>Atún Dolores - 133g</td>
+                                    <td><a class="control" href="#">--</a> 4 <a class="control" href="#">+</a></td>
+                                    <td>
+                                        <a class="icono" href="#"><img src="editar.png" alt="editar"></a>
+                                        <a class="icono" href="#"><img src="eliminar.png" alt="eliminar"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><strong>AC750</strong></th>
+                                    <td>Aceite</td>
+                                    <td>Aceite Capullo - 750ml</td>
+                                    <td><a class="control" href="#">--</a> 23 <a class="control" href="#">+</a></td>
+                                    <td>
+                                        <a class="icono" href="#"><img src="editar.png" alt="editar"></a>
+                                        <a class="icono" href="#"><img src="eliminar.png" alt="eliminar"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><strong>LV500</strong></th>
+                                    <td>Legumbres</td>
+                                    <td>Lentejas Verde Valle - 500g</td>
+                                    <td><a class="control" href="#">--</a> 12 <a class="control" href="#">+</a></td>
+                                    <td>
+                                        <a class="icono" href="#"><img src="editar.png" alt="editar"></a>
+                                        <a class="icono" href="#"><img src="eliminar.png" alt="eliminar"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="botones">
+                        <a class="boton-donar" href="donar.html">DONAR PRODUCTO</a>
+                    </div>
                 </div>
             </main>
         </div>
