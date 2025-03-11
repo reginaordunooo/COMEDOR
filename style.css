@@ -1,0 +1,58 @@
+#header{
+    color: white;
+    background-color: #6FA4D3;
+}
+
+#titulo {
+    font-family: Jost, sans-serif;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: Jost, sans-serif;
+}
+
+.btn-signout {
+    font-family: Jost, sans-serif;
+    color: white; 
+    background-color: #6FA4D3; 
+}
+
+.btn-signout:hover {
+    background-color: white;
+    color: #6FA4D3;
+}
+
+.boton-donar{
+    font-family: Jost, sans-serif;
+    color: #6FA4D3; 
+    background-color: white; 
+    border: 1px solid #6FA4D3;
+}
+
+.boton-donar:hover{
+    color: white;
+    background-color: #6FA4D3;
+    border: 1px solid white;
+}
+
+.boton-cancelar{
+    font-family: Jost, sans-serif;
+    color: #6FA4D3; 
+    background-color: #EFEFEF; 
+    border: 1px solid #6FA4D3;
+}
+
+.boton-cancelar:hover{
+    color: #6FA4D3; 
+    background-color: white; 
+    border: 1px solid #6FA4D3;
+}
+
+#titulo_pagina{
+    font-family: Jost, sans-serif;
+}
+
+#tabla{
+    font-family: Jost, sans-serif;
+}
