@@ -34,17 +34,31 @@ body, html {
     color: #6FA4D3;
 }
 
+#titulo_pagina{
+    font-family: Jost, sans-serif;
+}
+
+#tabla{
+    font-family: Jost, sans-serif;
+}
+
+.control {
+    font-size: 20px;
+    font-weight: 600;
+    color: #6FA4D3;
+}
+
 .boton-donar{
     font-family: Jost, sans-serif;
     color: #6FA4D3; 
     background-color: white; 
-    border: 1px solid #6FA4D3;
+    border: 2px solid #6FA4D3;
 }
 
 .boton-donar:hover{
     color: white;
     background-color: #6FA4D3;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .boton-cancelar{
@@ -58,14 +72,6 @@ body, html {
     color: #6FA4D3; 
     background-color: white; 
     border: 1px solid #6FA4D3;
-}
-
-#titulo_pagina{
-    font-family: Jost, sans-serif;
-}
-
-#tabla{
-    font-family: Jost, sans-serif;
 }
 
 .seleccionar{
